@@ -13,34 +13,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="">
+	<meta name="description" content="Ben Lubar is a Go/JavaScript/C++ developer on GitHub">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="generator" content="Polymer Starter Kit" />
-	<title>Polymer Starter Kit</title>
+	<title>Ben Lubar on GitHub</title>
 	<!-- Place favicon.ico in the `app/` directory -->
-
-	<!-- Chrome for Android theme color -->
-	<meta name="theme-color" content="#303F9F">
-
-	<!-- Web Application Manifest -->
-	<link rel="manifest" href="manifest.json">
-
-	<!-- Tile color for Win8 -->
-	<meta name="msapplication-TileColor" content="#3372DF">
-
-	<!-- Add to homescreen for Chrome on Android -->
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="application-name" content="PSK">
-	<link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
-
-	<!-- Add to homescreen for Safari on iOS -->
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
-	<link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
-
-	<!-- Tile icon for Win8 (144x144) -->
-	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
 
 	<!-- build:css styles/main.css -->
 	<link rel="stylesheet" href="styles/main.css">
@@ -64,40 +41,61 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 				<!-- Drawer Toolbar -->
 				<paper-toolbar id="drawerToolbar">
-					<span class="paper-font-title">Menu</span>
+					<span class="paper-font-title">Quick Links</span>
 				</paper-toolbar>
 
 				<!-- Drawer Content -->
-				<paper-menu class="list" attr-for-selected="data-route" selected="{{route}}" on-iron-select="onMenuSelect">
-					<a data-route="home" href="/">
+				<paper-menu class="list">
+					<a href="https://benlubar.github.io/">
 						<iron-icon icon="home"></iron-icon>
-						<span>Home</span>
+						<span>This page</span>
 					</a>
 
-					<a data-route="users" href="/users">
-						<iron-icon icon="info"></iron-icon>
-						<span>Users</span>
+					<a href="https://plus.google.com/+BenLubar">
+						<iron-icon src="images/googleplus.png"></iron-icon>
+						<span>Google+</span>
 					</a>
 
-					<a data-route="contact" href="/contact">
+					<a href="https://www.youtube.com/channel/UCAHPWYZV1-oWKk0dOGmuvXg">
+						<iron-icon src="images/youtube.png"></iron-icon>
+						<span>YouTube</span>
+					</a>
+
+					<a href="https://steamcommunity.com/id/nightgunner5">
+						<iron-icon src="images/steam.png"></iron-icon>
+						<span>Steam</span>
+					</a>
+
+					<a href="https://what.thedailywtf.com/users/ben_lubar">
+						<iron-icon src="images/tdwtf.png"></iron-icon>
+						<span>What the Daily WTF?</span>
+					</a>
+
+					<a href="https://www.duolingo.com/BenLubar">
+						<iron-icon src="images/duolingo.png"></iron-icon>
+						<span>Duolingo</span>
+					</a>
+
+					<a href="http://www.moddb.com/mods/swarm-director-2">
+						<iron-icon src="images/sd2.png"></iron-icon>
+						<span>Swarm Director 2</span>
+					</a>
+
+					<a href="mailto:ben.lubar@gmail.com">
 						<iron-icon icon="mail"></iron-icon>
-						<span>Contact</span>
+						<span>Email</span>
 					</a>
 				</paper-menu>
 			</paper-header-panel>
-			<paper-header-panel main mode="waterfall-tall">
+			<paper-header-panel main mode="waterfall">
 
 				<!-- Main Toolbar -->
 				<paper-toolbar id="mainToolbar">
 					<paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
 					<span class="flex"></span>
 
-					<!-- Toolbar icons -->
-					<paper-icon-button icon="refresh"></paper-icon-button>
-					<paper-icon-button icon="search"></paper-icon-button>
-
 					<!-- Application name -->
-					<div class="middle paper-font-display2 app-name">Polymer Starter Kit</div>
+					<div class="middle paper-font-display2 app-name">Ben Lubar</div>
 
 					<!-- Application sub title -->
 					<div class="bottom title"></div>
@@ -106,82 +104,107 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 				<!-- Main Content -->
 				<div class="content">
-					<iron-pages attr-for-selected="data-route" selected="{{route}}">
-
+					<iron-pages attr-for-selected="data-route" selected="home">
 						<section data-route="home">
 							<paper-material elevation="1">
-								<my-greeting></my-greeting>
-
-								<p class="paper-font-subhead">You now have:</p>
-								<my-list></my-list>
-
-								<p class="paper-font-body2">Looking for more Web App layouts? Check out our <a href="https://github.com/PolymerElements/app-layout-templates">layouts</a> collection. You can also <a href="http://polymerelements.github.io/app-layout-templates/">preview</a> them live.</p>
+								<p lang="en">
+									Hello, I'm Ben Lubar. I am autistic and speak English, lojban, and Esperanto.
+								</p>
+								<p lang="jbo">
+									coi mi'e benlubar. .i mi sezga'o .ije mi baupli la gleban. joi la lojban. joi la sperybau
+								</p>
+								<p lang="eo">
+									Saluton. Mia nomo estas Ben Lubar. Mi autistas kaj mi parolas la anglan, Loĵbanon kaj Esperanton.
+								</p>
 							</paper-material>
+
 							<paper-material elevation="1">
-								<p class="paper-font-body2">This is another card.</p>
+								<img src="images/avatar.png" alt="" width="100%">
 							</paper-material>
 
-							<paper-material elevation="1" class="paper-font-body2">
-								<h1 id="license">License</h1>
-								<p>Everything in this repo is BSD style license unless otherwise specified.</p>
-								<p>Copyright (c) 2015 The Polymer Authors. All rights reserved.</p>
-								<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-								<ul>
-								<li>Redistributions of source code must retain the above copyright
-								notice, this list of conditions and the following disclaimer.</li>
-								<li>Redistributions in binary form must reproduce the above
-								copyright notice, this list of conditions and the following disclaimer
-								in the documentation and/or other materials provided with the
-								distribution.</li>
-								<li>Neither the name of Google Inc. nor the names of its
-								contributors may be used to endorse or promote products derived from
-								this software without specific prior written permission.</li>
-								</ul>
-								<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
-							</paper-material>
-
-						</section>
-
-						<section data-route="users">
 							<paper-material elevation="1">
-								<h2 class="paper-font-display2">Users</h2>
-								<p>This is the users section</p>
-								<a href="/users/Rob">Rob</a>
+								I don't use GPG normally, but if you have something super secret to tell me, you can use this key:
+<pre>-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: SKS 1.1.5
+Comment: Hostname: pgp.mit.edu
+
+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
+uUp5scv5fcreIw==
+=avZx
+-----END PGP PUBLIC KEY BLOCK-----
+</pre>
 							</paper-material>
 						</section>
-
-						<section data-route="user-info">
-							<paper-material elevation="1">
-								<h2 class="paper-font-display2">
-								User:<span>{{params.name}}</span>
-								</h2>
-								<div>This is <span>{{params.name}}</span>'s section</div>
-							</paper-material>
-						</section>
-
-						<section data-route="contact">
-							<paper-material elevation="1">
-								<h2 class="paper-font-display2">Contact</h2>
-								<p>This is the contact section</p>
-							</paper-material>
-						</section>
-
 					</iron-pages>
 				</div>
 			</paper-header-panel>
 		</paper-drawer-panel>
 
-		<paper-toast id="caching-complete"
-								 duration="6000"
-								 text="Caching complete! This app will work offline.">
-		</paper-toast>
-
 		<platinum-sw-register auto-register
-													clients-claim
-													skip-waiting
-													on-service-worker-installed="displayInstalledToast">
+			clients-claim
+			skip-waiting>
 			<platinum-sw-cache default-cache-strategy="networkFirst"
-												 precache-file="precache.json">
+				 precache-file="precache.json">
 			</platinum-sw-cache>
 		</platinum-sw-register>
 
